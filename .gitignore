@@ -1,0 +1,9 @@
+auto-save-list/
+elpa/*.txt
+elpa/archives/
+elpa/gnupg/
+eshell/
+games/
+session.*
+tramp
+url/
