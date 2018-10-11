@@ -5,7 +5,6 @@
     (setq tabbar-buffer-groups-function 'buffer-groups)
     (setq tabbar-separator '(2))
 
-    (setq tabbar-auto-scroll-flag nil)
     (setq tabbar-use-images nil)
 
     (setq tabbar-buffer-home-button '(("") ""))
