@@ -21,7 +21,7 @@
 
 
 (define-key isearch-mode-map (kbd "C-f") 'isearch-repeat-forward)
-(define-key isearch-mode-map (kbd "C-v") (lambda()
+(define-key isearch-mode-map (kbd "C-v") (lambda() (interactive)
     (isearch-yank-string (gui-get-primary-selection))))
 
 
