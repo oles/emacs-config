@@ -11,6 +11,10 @@
 (setq-default cursor-in-non-selected-windows nil)
 
 
+;; Disables auto hiding of mouse pointer
+(setq mouse-avoidance-mode nil)
+
+
 (setq-default mode-line-format '(
     "%e" mode-line-buffer-identification "   " mode-name "  " "(" "%l" ", " "%c" ")"))
 

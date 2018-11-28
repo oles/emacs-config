@@ -45,6 +45,10 @@
 (setq-default vc-handled-backends nil)
 
 
+;; Kill processes without confirmation
+(setq confirm-kill-processes nil)
+
+
 ;; removes warnings for the commands listed
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
