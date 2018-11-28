@@ -1,3 +1,2 @@
-;; Loads and enables custom packages
+;; Loads custom packages
 (load (concat package-user-dir "/hide-mouse-mode/hide-mouse-mode.el"))
-(hide-mouse-mode)
