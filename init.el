@@ -35,6 +35,8 @@
 (global-set-key (kbd "M-%") 'query-replace-from-region)
 
 
+;; (hide-mouse-mode) ;; TODO: Finalize
+
 
 ;; Loads js2-mode.el and customizations
 (defun js2-mode-tweaks()
@@ -91,7 +93,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (replace-from-region hide-mode-line switch-buffer-functions js2-mode drag-stuff web-mode undo-tree tabbar smartparens nginx-mode atom-one-dark-theme)))
+    (hide-mouse-mode replace-from-region hide-mode-line switch-buffer-functions js2-mode drag-stuff web-mode undo-tree tabbar smartparens nginx-mode atom-one-dark-theme)))
  '(sp-autodelete-closing-pair nil)
  '(sp-autodelete-opening-pair nil)
  '(sp-autodelete-pair nil)
