@@ -45,6 +45,10 @@
 (setq-default vc-handled-backends nil)
 
 
+;; Disable mouse-avoidance-mode
+(setq mouse-avoidance-mode nil)
+
+
 ;; Kill processes without confirmation
 (setq confirm-kill-processes nil)
 

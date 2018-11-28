@@ -12,7 +12,7 @@
 
 
 ;; Disables auto hiding of mouse pointer
-(setq mouse-avoidance-mode nil)
+(setq make-pointer-invisible nil)
 
 
 (setq-default mode-line-format '(
