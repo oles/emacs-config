@@ -20,9 +20,8 @@
 
 
 ;; melpa packages
-(setq package-enable-at-startup nil)
-(package-initialize)
 (require 'package)
+(package-initialize)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
 (load (concat user-emacs-directory "config/tabbar.el"))
