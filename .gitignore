@@ -1,7 +1,7 @@
 auto-save-list/
-elpa/*.txt
-elpa/archives/
-elpa/gnupg/
+packages/*.txt
+packages/archives/
+packages/gnupg/
 eshell/
 games/
 session.*
