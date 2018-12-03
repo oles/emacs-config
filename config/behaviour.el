@@ -41,12 +41,16 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 
-;; Disable vc-git
+;; disable vc-git
 (setq-default vc-handled-backends nil)
 
 
-;; Disable mouse-avoidance-mode
+;; disable mouse-avoidance-mode
 (setq mouse-avoidance-mode nil)
+
+
+;; disables auto hiding of mouse pointer
+(setq make-pointer-invisible nil)
 
 
 ;; Kill processes without confirmation
@@ -70,7 +74,7 @@
 (setq frame-resize-pixelwise t)
 
 
-;; Stops keyboard-escape-quit from closing other windows
+;; stops keyboard-escape-quit from closing other windows
 (defadvice keyboard-escape-quit
   (around keyboard-escape-quit-dont-close-windows activate)
   (let ((buffer-quit-function (lambda() ())))
