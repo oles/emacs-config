@@ -74,6 +74,10 @@
 (setq frame-resize-pixelwise t)
 
 
+;; prevents coloring of css values
+(customize-set-variable 'css-fontify-colors nil)
+
+
 ;; stops keyboard-escape-quit from closing other windows
 (defadvice keyboard-escape-quit
   (around keyboard-escape-quit-dont-close-windows activate)
