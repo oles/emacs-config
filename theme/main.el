@@ -1,8 +1,4 @@
-;; sets a pleasant global line spacing
-(customize-set-variable 'line-spacing 0.11)
-
-
-(set-face-attribute 'default nil :background "#171717" :foreground "#ABB2BF" :family "DejaVu Sans Mono")
+(set-face-attribute 'default nil :background "#171717" :foreground "#ABB2BF")
 
 (set-face-attribute 'bold nil :weight 'unspecified)
 
