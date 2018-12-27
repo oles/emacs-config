@@ -16,7 +16,9 @@
 
 (add-hook 'emacs-startup-hook (lambda()
   (when (equal "*scratch*" (format "%s" (current-buffer)))
-    (progn (resize-normal) (sleep-for 0.1) (new-terminal)))))
+    (progn (resize-normal)
+           (sleep-for 0.1) ;; workaround height bug in terminal
+           (new-terminal)))))
 
 
 
@@ -107,7 +109,6 @@
  ;; If there is more than one, they won't work right.
 
  '(compilation-mode-line-fail ((t (:inherit term-color-red))))
- '(cursor ((t (:background "#1EE8FF"))))
  '(fixed-pitch-serif ((t (:foreground "#A1EFE4"))))
  '(font-lock-builtin-face ((t (:foreground "#56B6C2"))))
  '(font-lock-comment-face ((t (:foreground "#5C6370"))))
@@ -137,15 +138,6 @@
  '(tabbar-selected ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
  '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
- '(term-bold ((t nil)))
- '(term-color-black ((t (:foreground "#ABB2BF"))))
- '(term-color-blue ((t (:foreground "#61AFEF"))))
- '(term-color-cyan ((t (:foreground "#56B6C2"))))
- '(term-color-green ((t (:foreground "#98C379"))))
- '(term-color-magenta ((t (:foreground "#C678DD"))))
- '(term-color-red ((t (:foreground "#E06C75"))))
- '(term-color-white ((t (:foreground "#ABB2BF"))))
- '(term-color-yellow ((t (:foreground "#D19A66"))))
  '(tool-bar ((t (:background "grey75" :foreground "black"))))
  '(web-mode-block-control-face ((t (:inherit web-mode-keyword-face))))
  '(web-mode-block-delimiter-face ((t (:foreground "#ABB2BF"))))
