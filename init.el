@@ -108,8 +108,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
 
- '(compilation-mode-line-fail ((t (:inherit term-color-red))))
- '(fixed-pitch-serif ((t (:foreground "#A1EFE4"))))
  '(font-lock-builtin-face ((t (:foreground "#56B6C2"))))
  '(font-lock-comment-face ((t (:foreground "#5C6370"))))
  '(font-lock-constant-face ((t (:foreground "#56B6C2"))))
@@ -124,13 +122,6 @@
  '(js2-function-call ((t (:inherit font-lock-function-name-face))))
  '(js2-function-param ((t (:foreground "#E06C75"))))
  '(js2-object-property ((t (:foreground "#ABB2BF"))))
- '(lazy-highlight ((t (:foreground "#C678DD" :underline t))))
- '(minibuffer-prompt ((t (:inherit default))))
- '(mode-line ((t (:background "#202020" :box nil))))
- '(mode-line-buffer-id ((t (:foreground "#87D700" :weight normal))))
- '(mode-line-emphasis ((t (:inherit mode-line))))
- '(mode-line-highlight ((t (:inherit mode-line))))
- '(mode-line-inactive ((t (:inherit mode-line :background "#202020"))))
  '(tabbar-button ((t nil)))
  '(tabbar-default ((t (:background "#202020" :foreground "#BCBCBC" :box nil))))
  '(tabbar-highlight ((t nil)))
