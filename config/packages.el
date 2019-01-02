@@ -1,2 +1,6 @@
+(defun user-package-load(file)
+  (load (concat package-user-dir file) nil t))
+
+
 ;; Loads custom packages
-(load (concat package-user-dir "/hide-mouse-mode/hide-mouse-mode.el"))
+(user-package-load "/hide-mouse-mode/hide-mouse-mode.el")

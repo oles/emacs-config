@@ -6,13 +6,15 @@
 
 (defun clipboard-cut(beg end)
   (interactive "r")
-  (gui-set-selection `CLIPBOARD (substring-no-properties (filter-buffer-substring beg end)))
+  (gui-set-selection
+   `CLIPBOARD (substring-no-properties (filter-buffer-substring beg end)))
   (delete-region beg end))
 
 
 (defun clipboard-copy(beg end)
   (interactive "r")
-  (gui-set-selection `CLIPBOARD (substring-no-properties (filter-buffer-substring beg end))))
+  (gui-set-selection
+   `CLIPBOARD (substring-no-properties (filter-buffer-substring beg end))))
 
 
 (defun select-all()

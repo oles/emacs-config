@@ -1,16 +1,19 @@
-(load (concat user-emacs-directory "defines/common.el"))
+(defun user-directory-load(file)
+  (load (concat user-emacs-directory file) nil t))
 
-(load (concat user-emacs-directory "config/behaviour.el"))
-(load (concat user-emacs-directory "config/modes.el"))
+(user-directory-load "defines/common.el")
 
-(load (concat user-emacs-directory "theme/init.el"))
+(user-directory-load "config/behaviour.el")
+(user-directory-load "config/modes.el")
 
-(load (concat user-emacs-directory "config/aliases.el"))
-(load (concat user-emacs-directory "config/key-bindings.el"))
+(user-directory-load "theme/init.el")
 
-(load (concat user-emacs-directory "config/term-mode.el"))
+(user-directory-load "config/aliases.el")
+(user-directory-load "config/key-bindings.el")
 
-(load (concat user-emacs-directory "config/packages.el"))
+(user-directory-load "config/term-mode.el")
+
+(user-directory-load "config/packages.el")
 
 
 
@@ -30,9 +33,9 @@
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
-(load (concat user-emacs-directory "config/tabbar.el"))
-(load (concat user-emacs-directory "config/drag-stuff.el"))
-(load (concat user-emacs-directory "config/undo-tree.el"))
+(user-directory-load "config/tabbar.el")
+(user-directory-load "config/drag-stuff.el")
+(user-directory-load "config/undo-tree.el")
 
 (smartparens-global-mode 1)
 

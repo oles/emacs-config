@@ -1,18 +1,18 @@
-(load (concat user-emacs-directory "theme/cursor.el"))
-(load (concat user-emacs-directory "theme/mode-line.el"))
-(load (concat user-emacs-directory "theme/font.el"))
-(load (concat user-emacs-directory "theme/main.el"))
-(load (concat user-emacs-directory "theme/font-lock.el"))
+(user-directory-load "theme/cursor.el")
+(user-directory-load "theme/mode-line.el")
+(user-directory-load "theme/font.el")
+(user-directory-load "theme/main.el")
+(user-directory-load "theme/font-lock.el")
 
 
 (eval-after-load 'term
   (lambda()
-    (load (concat user-emacs-directory "theme/term-mode.el"))))
+    (user-directory-load "theme/term-mode.el")))
 
 (eval-after-load 'custom
   (lambda()
-    (load (concat user-emacs-directory "theme/custom-mode.el"))))
+    (user-directory-load "theme/custom-mode.el")))
 
 (eval-after-load 'info
   (lambda()
-    (load (concat user-emacs-directory "theme/info-mode.el"))))
+    (user-directory-load "theme/info-mode.el")))

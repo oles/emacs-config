@@ -1,4 +1,4 @@
-(load (concat user-emacs-directory "defines/tabbar.el"))
+(user-directory-load "defines/tabbar.el")
 
 
 (add-hook 'tabbar-mode-hook (lambda()
