@@ -1,4 +1,12 @@
+;; -*- lexical-binding: t -*-
+
 (relative-load "defines.el")
+
+(let ((directory (file-name-directory load-file-name)))
+  (with-eval-after-load 'tabbar
+    (absolute-load (concat directory "theme.el"))))
+
+
 
 
 (add-hook 'tabbar-mode-hook (lambda()
@@ -11,15 +19,7 @@
     (setq tabbar-home-button '(("") ""))
     (setq tabbar-scroll-left-button '(("") ""))
     (setq tabbar-scroll-right-button '(("") ""))
-
-    (custom-set-faces
-     '(tabbar-button ((t nil)))
-     '(tabbar-default ((t (:background "#202020" :foreground "#BCBCBC" :box nil))))
-     '(tabbar-highlight ((t nil)))
-     '(tabbar-modified ((t (:inherit tabbar-default :foreground "#87D700"))))
-     '(tabbar-selected ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
-     '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
-     '(tabbar-unselected ((t (:inherit tabbar-default)))))))
+))
 
 
 (tabbar-mode 1)

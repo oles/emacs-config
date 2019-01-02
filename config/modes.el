@@ -1,4 +1,4 @@
-(defvar-local directory (file-name-directory load-file-name))
+;; -*- lexical-binding: t -*-
 
 
 (tooltip-mode -1)
@@ -9,11 +9,12 @@
 (set-fringe-mode 0)
 
 
-(with-eval-after-load 'term
-  (absolute-load (concat directory "term-mode/init.el")))
+(let ((directory (file-name-directory load-file-name)))
+  (with-eval-after-load 'term
+    (absolute-load (concat directory "term-mode/init.el")))
 
-(with-eval-after-load 'info
-  (absolute-load (concat directory "info-mode.el")))
+  (with-eval-after-load 'info
+    (absolute-load (concat directory "info-mode.el")))
 
-(with-eval-after-load 'custom
-  (absolute-load (concat directory "custom-mode.el")))
+  (with-eval-after-load 'custom
+    (absolute-load (concat directory "custom-mode.el"))))

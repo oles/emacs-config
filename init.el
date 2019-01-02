@@ -102,13 +102,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(tabbar-button ((t nil)))
- '(tabbar-default ((t (:background "#202020" :foreground "#BCBCBC" :box nil))))
- '(tabbar-highlight ((t nil)))
- '(tabbar-modified ((t (:inherit tabbar-default :foreground "#87D700"))))
- '(tabbar-selected ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
- '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
- '(tabbar-unselected ((t (:inherit tabbar-default))))
  '(js2-external-variable ((t nil)))
  '(js2-function-call ((t (:inherit font-lock-function-name-face))))
  '(js2-function-param ((t (:foreground "#E06C75"))))
