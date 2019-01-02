@@ -1,7 +1,7 @@
 (set-face-attribute 'default nil :background "#171717" :foreground "#ABB2BF")
 
 (set-face-attribute 'bold nil :weight 'unspecified)
-(set-face-attribute 'fixed-pitch-serif nil :foreground "#A1EFE4")
+(set-face-attribute 'fixed-pitch-serif nil :foreground "#A1EFE4" :family 'unspecified)
 
 (set-face-attribute 'link nil :background 'unspecified :foreground "#66D9EF")
 (set-face-attribute 'link-visited nil :foreground "#61AFEF")

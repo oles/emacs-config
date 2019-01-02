@@ -11,3 +11,5 @@
 (set-face-attribute 'custom-button nil :inherit 'link)
 
 (set-face-attribute 'custom-variable-tag nil :weight 'unspecified :foreground "#A1EFE4")
+
+(set-face-attribute 'widget-field nil :background 'unspecified)

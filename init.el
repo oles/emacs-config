@@ -107,17 +107,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
-
- '(font-lock-builtin-face ((t (:foreground "#56B6C2"))))
- '(font-lock-comment-face ((t (:foreground "#5C6370"))))
- '(font-lock-constant-face ((t (:foreground "#56B6C2"))))
- '(font-lock-function-name-face ((t (:foreground "#61AFEF"))))
- '(font-lock-keyword-face ((t (:foreground "#C678DD"))))
- '(font-lock-string-face ((t (:foreground "#98C379"))))
- '(font-lock-type-face ((t (:foreground "#D19A66"))))
- '(font-lock-variable-name-face ((t (:foreground "#E06C75"))))
- '(info-menu-star ((t (:foreground "#E06C75"))))
- '(info-title-4 ((t (:inherit variable-pitch))))
  '(js2-external-variable ((t nil)))
  '(js2-function-call ((t (:inherit font-lock-function-name-face))))
  '(js2-function-param ((t (:foreground "#E06C75"))))
@@ -129,7 +118,6 @@
  '(tabbar-selected ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
  '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
- '(tool-bar ((t (:background "grey75" :foreground "black"))))
  '(web-mode-block-control-face ((t (:inherit web-mode-keyword-face))))
  '(web-mode-block-delimiter-face ((t (:foreground "#ABB2BF"))))
  '(web-mode-comment-keyword-face ((t nil)))
@@ -137,5 +125,4 @@
  '(web-mode-html-attr-name-face ((t (:foreground "#D19A66"))))
  '(web-mode-html-entity-face ((t (:foreground "#D19A66"))))
  '(web-mode-html-tag-bracket-face ((t (:foreground "#ABB2BF"))))
- '(web-mode-html-tag-face ((t (:foreground "#E06C75"))))
- '(widget-field ((t nil))))
+ '(web-mode-html-tag-face ((t (:foreground "#E06C75")))))
