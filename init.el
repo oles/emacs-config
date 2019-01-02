@@ -1,19 +1,23 @@
-(defun user-directory-load(file)
-  (load (concat user-emacs-directory file) nil t))
+(defun absolute-load(path)
+  (load path nil t))
 
-(user-directory-load "defines/common.el")
+(defun relative-load(file)
+  (absolute-load (concat (file-name-directory load-file-name) file)))
 
-(user-directory-load "config/behaviour.el")
-(user-directory-load "config/modes.el")
 
-(user-directory-load "theme/init.el")
+(relative-load "config/defines.el")
 
-(user-directory-load "config/aliases.el")
-(user-directory-load "config/key-bindings.el")
+(relative-load "config/behaviour.el")
+(relative-load "config/modes.el")
 
-(user-directory-load "config/term-mode.el")
+(relative-load "theme/init.el")
 
-(user-directory-load "config/packages.el")
+(relative-load "config/aliases.el")
+(relative-load "config/key-bindings.el")
+
+(relative-load "config/term-mode/init.el")
+
+(relative-load "config/packages.el")
 
 
 
@@ -25,7 +29,7 @@
 
 
 
-;; TODO: Finalize refactor below
+;; ;; TODO: Finalize refactor below
 
 
 ;; melpa packages
@@ -33,9 +37,9 @@
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 
-(user-directory-load "config/tabbar.el")
-(user-directory-load "config/drag-stuff.el")
-(user-directory-load "config/undo-tree.el")
+(relative-load "config/tabbar/init.el")
+(relative-load "config/drag-stuff.el")
+(relative-load "config/undo-tree.el")
 
 (smartparens-global-mode 1)
 
@@ -110,10 +114,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(js2-external-variable ((t nil)))
- '(js2-function-call ((t (:inherit font-lock-function-name-face))))
- '(js2-function-param ((t (:foreground "#E06C75"))))
- '(js2-object-property ((t (:foreground "#ABB2BF"))))
  '(tabbar-button ((t nil)))
  '(tabbar-default ((t (:background "#202020" :foreground "#BCBCBC" :box nil))))
  '(tabbar-highlight ((t nil)))
@@ -121,6 +121,10 @@
  '(tabbar-selected ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
  '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "#1EE8FF"))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
+ '(js2-external-variable ((t nil)))
+ '(js2-function-call ((t (:inherit font-lock-function-name-face))))
+ '(js2-function-param ((t (:foreground "#E06C75"))))
+ '(js2-object-property ((t (:foreground "#ABB2BF"))))
  '(web-mode-block-control-face ((t (:inherit web-mode-keyword-face))))
  '(web-mode-block-delimiter-face ((t (:foreground "#ABB2BF"))))
  '(web-mode-comment-keyword-face ((t nil)))

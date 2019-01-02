@@ -53,8 +53,9 @@
 (setq make-pointer-invisible nil)
 
 
-;; Kill processes without confirmation
+;; kill processes without confirmation
 (setq confirm-kill-processes nil)
+(setq kill-buffer-query-functions nil)
 
 
 ;; removes warnings for the commands listed

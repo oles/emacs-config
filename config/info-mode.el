@@ -1,3 +1,8 @@
+;; (eval-after-load 'info
+;;   (lambda()
+;;     (user-directory-load "theme/info-mode.el")))
+
+
 (set-face-attribute 'info-title-1 nil :height 'unspecified)
 (set-face-attribute 'info-title-2 nil :height 'unspecified)
 (set-face-attribute 'info-title-3 nil :height 'unspecified)
