@@ -1,9 +1,3 @@
-;; (eval-after-load 'custom
-;;   (lambda()
-;;     (user-directory-load "theme/custom-mode.el")))
-
-
-
 (dolist (face '(custom-button
                 custom-button-mouse
                 custom-button-pressed

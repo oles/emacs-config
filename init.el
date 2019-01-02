@@ -5,20 +5,8 @@
   (absolute-load (concat (file-name-directory load-file-name) file)))
 
 
-(relative-load "config/defines.el")
-
-(relative-load "config/behaviour.el")
-(relative-load "config/modes.el")
-
 (relative-load "theme/init.el")
-
-(relative-load "config/aliases.el")
-(relative-load "config/key-bindings.el")
-
-(relative-load "config/term-mode/init.el")
-
-(relative-load "config/packages.el")
-
+(relative-load "config/init.el")
 
 
 (add-hook 'emacs-startup-hook (lambda()
@@ -29,7 +17,7 @@
 
 
 
-;; ;; TODO: Finalize refactor below
+;; TODO: Finalize refactor below
 
 
 ;; melpa packages
