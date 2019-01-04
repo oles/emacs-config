@@ -31,7 +31,6 @@
 (relative-load "config/web-mode.el")
 (relative-load "config/js2-mode.el")
 
-(smartparens-global-mode 1)
 
 (defalias 'toggle-mode-line 'hide-mode-line-mode)
 
@@ -59,11 +58,4 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (replace-from-region hide-mode-line js2-mode drag-stuff web-mode undo-tree tabbar smartparens nginx-mode)))
- '(sp-autodelete-closing-pair nil)
- '(sp-autodelete-opening-pair nil)
- '(sp-autodelete-pair nil)
- '(sp-autodelete-wrap nil)
- '(sp-highlight-pair-overlay nil)
- '(sp-highlight-wrap-overlay nil)
- '(sp-highlight-wrap-tag-overlay nil))
+    (replace-from-region hide-mode-line js2-mode drag-stuff web-mode undo-tree tabbar smartparens nginx-mode))))

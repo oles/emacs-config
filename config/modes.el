@@ -1,15 +1,13 @@
 ;; -*- lexical-binding: t -*-
 
 
-(tooltip-mode -1)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(line-number-mode -1)
-(scroll-bar-mode -1)
-(set-fringe-mode 0)
+(electric-pair-mode 1)
 
 
 (let ((directory (file-name-directory load-file-name)))
+  (with-eval-after-load 'electric
+    (absolute-load (concat directory "electric-pair.el")))
+
   (with-eval-after-load 'term
     (absolute-load (concat directory "term-mode/init.el")))
 
