@@ -8,6 +8,8 @@
                       :background 'unspecified
                       :foreground 'unspecified))
 
+(set-face-attribute 'custom-group-tag nil :height 'unspecified :weight 'unspecified)
+
 (set-face-attribute 'custom-button nil :inherit 'link)
 
 (set-face-attribute 'custom-variable-tag nil :weight 'unspecified :foreground "#A1EFE4")
