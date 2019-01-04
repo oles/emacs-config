@@ -25,6 +25,9 @@
     (setq drag-stuff--point-mark-exchanged nil)))
 
 
+(assq-delete-all 'drag-stuff-mode minor-mode-map-alist)
+
+
 (add-hook 'drag-stuff-before-drag-hook 'drag-stuff--pre-drag)
 (add-hook 'drag-stuff-after-drag-hook 'drag-stuff--post-drag)
 
