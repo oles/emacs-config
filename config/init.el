@@ -3,6 +3,7 @@
 (relative-load "behaviour.el")
 
 (relative-load "aliases.el")
+(relative-load "key-clearings.el")
 (relative-load "key-bindings.el")
 
 (relative-load "modes.el")

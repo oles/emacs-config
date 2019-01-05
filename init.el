@@ -37,20 +37,6 @@
 (global-set-key (kbd "M-%") 'query-replace-from-region)
 
 
-
-;; clear keybinding of various modes
-(assq-delete-all 'undo-tree-mode minor-mode-map-alist)
-(setq visual-line-mode-map (make-sparse-keymap))
-(setq comint-mode-map (make-sparse-keymap))
-(setq shell-mode-map (make-sparse-keymap))
-(setq help-mode-map (make-sparse-keymap))
-(setq conf-mode-map (make-sparse-keymap))
-(setq js-mode-map (make-sparse-keymap))
-(setq c-mode-map (make-sparse-keymap))
-(eval-after-load "diff-mode" '(setq diff-mode-map (make-sparse-keymap)))
-
-
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

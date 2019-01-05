@@ -1,30 +1,3 @@
-;; Clears
-(global-unset-key (kbd "C-k"))
-(global-unset-key (kbd "M-q"))
-(global-unset-key (kbd "M-d"))
-(global-unset-key (kbd "C-q"))
-(global-unset-key (kbd "M-z"))
-(global-unset-key (kbd "M-|"))
-(global-unset-key (kbd "<insert>"))
-(global-unset-key (kbd "<insertchar>"))
-(global-unset-key (kbd "M-w"))
-(global-unset-key (kbd "M-c"))
-
-
-;; ESC to escape on all the things
-(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
-(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
-(global-set-key [escape] 'keyboard-escape-quit)
-
-
-(define-key isearch-mode-map (kbd "C-f") 'isearch-repeat-forward)
-(define-key isearch-mode-map (kbd "C-v") (lambda() (interactive)
-    (isearch-yank-string (gui-get-primary-selection))))
-
-
 (global-set-key (kbd "C-f") 'isearch-forward)
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-a") 'select-all)
@@ -54,3 +27,18 @@
 (global-set-key (kbd "C-1") 'delete-other-windows)
 (global-set-key (kbd "C-2") 'split-window-below)
 (global-set-key (kbd "C-3") 'split-window-right)
+
+
+(define-key isearch-mode-map (kbd "C-f") 'isearch-repeat-forward)
+(define-key isearch-mode-map (kbd "C-v")
+  (lambda() (interactive)
+    (isearch-yank-string (gui-get-primary-selection))))
+
+
+;; ESC to escape for all the things
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+(global-set-key [escape] 'keyboard-escape-quit)
