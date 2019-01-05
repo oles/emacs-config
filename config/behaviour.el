@@ -6,6 +6,10 @@
 (defun display-startup-echo-area-message ())
 
 
+;; sets text-mode as the start-up mode
+(setq initial-major-mode 'text-mode)
+
+
 ;; sets custom package location
 (setq package-user-dir (concat user-emacs-directory "packages"))
 
