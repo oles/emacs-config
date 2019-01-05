@@ -6,12 +6,16 @@
 (defun display-startup-echo-area-message ())
 
 
-;; sets text-mode as the start-up mode
-(setq initial-major-mode 'text-mode)
+;; changes location of custom-file
+(setq custom-file (concat user-emacs-directory "custom.el"))
 
 
 ;; sets custom package location
 (setq package-user-dir (concat user-emacs-directory "packages"))
+
+
+;; don't automatically enable packages at start-up
+(setq package-enable-at-startup nil)
 
 
 ;; don't create backup files
@@ -80,7 +84,7 @@
 ;; smooth scroll with arrow keys
 (setq-default mouse-wheel-scroll-amount '(1 ((shift) . 1)))
 (setq-default mouse-wheel-progressive-speed nil)
-(setq-default mouse-wheel-follow-mouse 't)
+(setq-default mouse-wheel-follow-mouse t)
 (setq-default scroll-step 1)
 
 
@@ -89,7 +93,7 @@
 
 
 ;; prevents coloring of css values
-(customize-set-variable 'css-fontify-colors nil)
+(setq-default css-fontify-colors nil)
 
 
 ;; stops keyboard-escape-quit from closing other windows

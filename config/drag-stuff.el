@@ -25,7 +25,6 @@
     (setq drag-stuff--point-mark-exchanged nil)))
 
 
-(assq-delete-all 'drag-stuff-mode minor-mode-map-alist)
 
 
 (add-hook 'drag-stuff-before-drag-hook 'drag-stuff--pre-drag)
@@ -34,6 +33,9 @@
 
 (drag-stuff-global-mode 1)
 
+
+(setq minor-mode-map-alist
+      (assq-delete-all 'drag-stuff-mode minor-mode-map-alist))
 
 (global-set-key (kbd "C-M-<up>") 'drag-stuff-up)
 (global-set-key (kbd "C-M-<down>") 'drag-stuff-down)

@@ -1,5 +1,5 @@
 ;; sets a pleasant line spacing
-(customize-set-variable 'line-spacing 0.11)
+(setq-default line-spacing 0.11)
 
 
 ;; sets font to size 11 DejaVu Sans Mono

@@ -9,7 +9,6 @@
     (switch-to-buffer tab)))
 
 
-(require 'cl) ;; for compatibility
 (defun tabbar-move-tab(&optional right)
   (let* ((ctabset nil)
          (ctabs nil)
