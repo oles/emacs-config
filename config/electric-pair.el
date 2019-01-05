@@ -8,5 +8,5 @@
 (setq electric-pair-delete-adjacent-pairs nil)
 
 
-(with-eval-after-load "elisp-mode"
+(with-eval-after-load 'elisp-mode
   (setq-local electric-pair-pairs (remove single-quote electric-pair-pairs)))
