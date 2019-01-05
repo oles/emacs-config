@@ -1,9 +1,11 @@
 auto-save-list/
+eshell/
+games/
 packages/*.txt
 packages/archives/
 packages/gnupg/
-eshell/
-games/
+url/
+
+custom.el
 session.*
 tramp
-url/
