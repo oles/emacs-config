@@ -1,13 +1,10 @@
 ;; -*- lexical-binding: t -*-
 
 
-(electric-pair-mode 1)
+(relative-load "electric-pair/init.el")
 
 
 (let ((directory (file-name-directory load-file-name)))
-  (with-eval-after-load 'elec-pair
-    (absolute-load (concat directory "electric-pair.el")))
-
   (with-eval-after-load 'term
     (absolute-load (concat directory "term-mode/init.el")))
 

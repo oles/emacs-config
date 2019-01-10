@@ -1,6 +1,4 @@
 ;; -*- lexical-binding: t -*-
-
-
 (relative-load "defines.el")
 
 (let ((directory (file-name-directory load-file-name)))
