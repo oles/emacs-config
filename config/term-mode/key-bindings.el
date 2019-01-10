@@ -43,7 +43,7 @@
 (define-key term-raw-map (kbd "C-v")
   (lambda()
     (interactive)
-    (term-send-raw-string (gui-get-primary-selection))))
+    (term-send-raw-string (gui-get-selection `CLIPBOARD `UTF8_STRING))))
 
 
 
