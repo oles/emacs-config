@@ -1,3 +1,4 @@
+(define-key term-raw-map [escape] 'term-send-raw-meta)
 (define-key term-raw-map (kbd "C-c") 'term-send-raw)
 (define-key term-raw-map (kbd "M-|") 'term-line-mode)
 (define-key term-raw-map (kbd "M-x") 'execute-extended-command)
