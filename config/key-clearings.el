@@ -5,10 +5,13 @@
   (global-unset-key (kbd key)))
 
 
-(with-eval-after-load 'js (setq js-mode-map (make-sparse-keymap)))
-(with-eval-after-load 'cc-mode (setq c-mode-map (make-sparse-keymap)))
+
 (with-eval-after-load 'help-mode (setq help-mode-map (make-sparse-keymap)))
 (with-eval-after-load 'diff-mode (setq diff-mode-map (make-sparse-keymap)))
+
+(with-eval-after-load 'cc-mode (setq c-mode-map (make-sparse-keymap)))
+(with-eval-after-load 'js (setq js-mode-map (make-sparse-keymap)))
+(with-eval-after-load 'sh-script (setq sh-mode-map (make-sparse-keymap)))
 
 (with-eval-after-load 'cus-edit
   (define-key custom-mode-map (kbd "C-c") nil)
