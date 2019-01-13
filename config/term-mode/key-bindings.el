@@ -25,15 +25,9 @@
     (term-send-raw-string "\e\C-h")))
 
 
-(define-key term-raw-map (kbd "M-1") nil)
-(define-key term-raw-map (kbd "M-2") nil)
-(define-key term-raw-map (kbd "M-3") nil)
-(define-key term-raw-map (kbd "M-4") nil)
-(define-key term-raw-map (kbd "M-5") nil)
-(define-key term-raw-map (kbd "M-6") nil)
-(define-key term-raw-map (kbd "M-7") nil)
-(define-key term-raw-map (kbd "M-8") nil)
-(define-key term-raw-map (kbd "M-9") nil)
+(dolist (key '("M-1" "M-2" "M-3" "M-4" "M-5" "M-6" "M-7" "M-8" "M-9"))
+  (define-key term-raw-map (kbd key) nil))
+
 
 
 
