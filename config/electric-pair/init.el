@@ -9,12 +9,17 @@
       (double (create-electric-pair "\""))
       (backtick (create-electric-pair "`")))
 
-  (electric-pair-set-global (list single double backtick))
+  (let ((default (list single double backtick)))
 
-  (add-hook
-   'emacs-lisp-mode-hook
-   (lambda()
-     (electric-pair-set-local (remove single electric-pair-pairs)))))
+    (add-hook
+     'after-change-major-mode-hook
+     (lambda()
 
-
-(electric-pair-mode 1)
+       (pcase major-mode
+         ('text-mode (electric-pair-local-mode-with default))
+         ('web-mode (electric-pair-local-mode-with default))
+         ('js-mode (electric-pair-local-mode-with default))
+         ('js2-mode (electric-pair-local-mode-with default))
+         ('fundamental-mode (electric-pair-local-mode-with default))
+         ('emacs-lisp-mode (electric-pair-local-mode-with (remove single default))))
+       ))))
