@@ -32,10 +32,13 @@
 
 (global-set-key (kbd "<f5>") 'reload-file)
 
-(global-set-key (kbd "C-1") 'delete-other-windows)
-(global-set-key (kbd "C-2") 'split-window-below)
-(global-set-key (kbd "C-3") 'split-window-right)
+(global-set-key (kbd "C-2") 'split-window-right)
+(global-set-key (kbd "C-3") 'split-window-below)
 
+(global-set-key (kbd "C-+") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-M-+") 'enlarge-window)
+(global-set-key (kbd "C--") 'shrink-window-horizontally)
+(global-set-key (kbd "C-M--") 'shrink-window)
 
 (define-key isearch-mode-map (kbd "C-f") 'isearch-repeat-forward)
 (define-key isearch-mode-map (kbd "C-v")
