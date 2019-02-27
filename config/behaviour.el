@@ -10,10 +10,6 @@
 (setq custom-file (concat user-emacs-directory "custom.el"))
 
 
-;; sets custom package location
-(setq package-user-dir (concat user-emacs-directory "packages"))
-
-
 ;; don't automatically enable packages at start-up
 (setq package-enable-at-startup nil)
 

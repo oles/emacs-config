@@ -1,3 +1,11 @@
+(dolist
+    (key '("<insert>" "<insertchar>"
+           "C-k" "C-q"
+           "M-q" "M-d" "M-z" "M-|" "M-w" "M-c"))
+  (global-unset-key (kbd key)))
+
+
+
 (global-set-key (kbd "C-f") 'isearch-forward)
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-a") 'select-all)

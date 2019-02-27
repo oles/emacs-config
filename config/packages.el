@@ -1,6 +1,5 @@
-;; loads custom packages
-;; (absolute-load (concat package-user-dir "/hide-mouse-mode/hide-mouse-mode.el"))
-
+;; sets custom package location
+(setq package-user-dir (concat user-emacs-directory "packages"))
 
 
 ;; adds melpa to package-archives
@@ -10,16 +9,3 @@
 
 ;; initializes installed packages
 (package-initialize)
-
-
-;; configures and enables packages
-(relative-load "tabbar/init.el")
-(relative-load "drag-stuff.el")
-(relative-load "undo-tree.el")
-(relative-load "web-mode.el")
-(relative-load "js2-mode.el")
-
-
-(global-set-key (kbd "M-%") 'query-replace-from-region)
-
-(add-to-list 'auto-mode-alist '("/nginx/sites-\\(?:available\\|enabled\\)/" . nginx-mode))
