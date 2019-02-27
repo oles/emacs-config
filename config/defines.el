@@ -90,6 +90,9 @@
     (revert-buffer)))
 
 
+(defun reload-config() (interactive) (load-file (concat user-emacs-directory "init.el")))
+
+
 (defun resize-normal()
   (interactive)
   (set-frame-size (selected-frame) 92 60)
