@@ -88,6 +88,10 @@
 (setq frame-resize-pixelwise t)
 
 
+;; makes text-scale-* adjust with smaller steps
+(setq text-scale-mode-step 1.1)
+
+
 ;; prevents coloring of css values
 (setq-default css-fontify-colors nil)
 

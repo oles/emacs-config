@@ -110,3 +110,8 @@
   (interactive)
   (term "bash")
   (rename-buffer (generate-new-buffer-name "terminal")))
+
+
+(defun text-scale-reset()
+  (interactive)
+  (text-scale-set 0))
