@@ -115,3 +115,13 @@
 (defun text-scale-reset()
   (interactive)
   (text-scale-set 0))
+
+
+(defun code-mode()
+  (interactive)
+  (resize-full)
+  (split-window-right)
+  (new-terminal)
+  (rename-buffer "*term*")
+  (tabbar-local-mode)
+  (shrink-window-horizontally 17))
