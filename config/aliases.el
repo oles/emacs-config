@@ -7,3 +7,5 @@
 (defalias 'increase-font-size 'text-scale-increase)
 (defalias 'decrease-font-size 'text-scale-decrease)
 (defalias 'reset-font-size 'text-scale-reset)
+
+(defalias 'uppercase 'upcase-region)
