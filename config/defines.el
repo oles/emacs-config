@@ -19,8 +19,8 @@
 
 (defun select-all()
   (interactive)
-  (execute-kbd-macro (kbd "C-<home>"))
-  (execute-kbd-macro (kbd "C-S-<end>")))
+  (execute-kbd-macro (kbd "C-<prior>"))
+  (execute-kbd-macro (kbd "C-S-<next>")))
 
 
 (defun comment-or-uncomment-region-or-line()

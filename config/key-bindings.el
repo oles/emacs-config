@@ -1,7 +1,7 @@
 (dolist
     (key '("<insert>" "<insertchar>"
-           "C-k" "C-q"
-           "M-q" "M-d" "M-z" "M-|" "M-w" "M-c"))
+           "C-k" "C-q" "C-<home>" "C-<end>"
+           "M-q" "M-d" "M-z" "M-|" "M-w" "M-c" "M-<" "M->"))
   (global-unset-key (kbd key)))
 
 
@@ -21,6 +21,9 @@
 (global-set-key (kbd "C-<backspace>") 'backward-delete-word)
 (global-set-key (kbd "C-u") 'new-terminal)
 (global-set-key (kbd "C-t") 'new-buffer)
+
+(global-set-key (kbd "C-<prior>") 'beginning-of-buffer)
+(global-set-key (kbd "C-<next>") 'end-of-buffer)
 
 (global-set-key (kbd "M-<up>") 'previous-multiframe-window)
 (global-set-key (kbd "M-<down>") 'next-multiframe-window)
