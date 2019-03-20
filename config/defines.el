@@ -35,7 +35,7 @@
 (defun save-all() (interactive) (save-some-buffers t))
 
 
-(defun new-empty-buffer()
+(defun new-buffer()
   (interactive)
   (let ((buffer (generate-new-buffer "untitled")))
     (switch-to-buffer buffer)

@@ -20,7 +20,7 @@
 (global-set-key (kbd "C-<delete>") 'delete-word)
 (global-set-key (kbd "C-<backspace>") 'backward-delete-word)
 (global-set-key (kbd "C-u") 'new-terminal)
-(global-set-key (kbd "C-t") 'new-empty-buffer)
+(global-set-key (kbd "C-t") 'new-buffer)
 
 (global-set-key (kbd "M-<up>") 'previous-multiframe-window)
 (global-set-key (kbd "M-<down>") 'next-multiframe-window)
