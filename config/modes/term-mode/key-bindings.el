@@ -33,7 +33,7 @@
 
 (define-key term-raw-map (kbd "C-o") 'find-file)
 (define-key term-raw-map (kbd "C-u") 'new-terminal)
-(define-key term-raw-map (kbd "C-t") 'new-empty-buffer)
+(define-key term-raw-map (kbd "C-t") 'new-buffer)
 (define-key term-raw-map (kbd "C-w") 'kill-this-buffer)
 (define-key term-raw-map (kbd "C-v")
   (lambda()
