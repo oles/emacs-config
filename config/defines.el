@@ -96,7 +96,6 @@
 (defun resize-normal()
   (interactive)
   (set-frame-size (selected-frame) 92 60)
-  ;; (set-frame-size (selected-frame) 92 59)
   (set-frame-position (selected-frame) 0 0))
 
 
