@@ -2,9 +2,9 @@
 
 
 (with-eval-after-load 'js2-mode
-  (setq js-expr-indent-offset (- js-indent-level))
+  (setq js-switch-indent-offset js-indent-level)
+
   (setq js2-mode-show-parse-errors nil)
-  (setq js2-switch-indent-offset 4)
   (setq js2-mode-show-strict-warnings nil)
   (setq js2-strict-missing-semi-warning nil)
 
