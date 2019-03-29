@@ -27,8 +27,16 @@
 
 (global-set-key (kbd "M-<up>") 'previous-multiframe-window)
 (global-set-key (kbd "M-<down>") 'next-multiframe-window)
-(global-set-key (kbd "S-M-<up>") (lambda() (interactive) (scroll-down-command 1)))
+
+(global-set-key
+ (kbd "S-M-<up>")
+ (lambda()
+   (interactive)
+   (unless (equal (line-number-at-pos (window-start)) 1)
+     (scroll-down-command 1))))
+
 (global-set-key (kbd "S-M-<down>") (lambda() (interactive) (scroll-up-command 1)))
+
 
 (global-set-key (kbd "C-SPC") 'browse-url-at-point)
 (global-set-key (kbd "C-S-SPC") 'set-mark-command)

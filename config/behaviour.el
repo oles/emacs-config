@@ -83,6 +83,9 @@
 (setq-default mouse-wheel-follow-mouse t)
 (setq-default scroll-step 1)
 
+;; makes page-up and page-down move cursor to top or bottom
+;; when there's nothing left to scroll
+(setq-default scroll-error-top-bottom t)
 
 ;; enables pixel resizing of window
 (setq frame-resize-pixelwise t)
