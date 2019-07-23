@@ -18,6 +18,7 @@
        (pcase major-mode
          ('text-mode (electric-pair-local-mode-with default))
          ('web-mode (electric-pair-local-mode-with default))
+         ('scss-mode (electric-pair-local-mode-with default))
          ('js-mode (electric-pair-local-mode-with default))
          ('js2-mode (electric-pair-local-mode-with default))
          ('fundamental-mode (electric-pair-local-mode-with default))
