@@ -1,4 +1,4 @@
-;; ;; sets a pleasant line spacing
+;; sets a pleasant line spacing
 (setq-default line-spacing 0.11)
 
 
