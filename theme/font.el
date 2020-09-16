@@ -2,6 +2,11 @@
 (setq-default line-spacing 0.11)
 
 
+;; enables display of emojis
+(set-fontset-font t 'symbol "Apple Color Emoji")
+;; TODO: check out https://github.com/dunn/company-emoji
+
+
 ;; sets font to size 11 DejaVu Sans Mono
 ;; inside the `with-eval-after-load` to prevent height calculation error on startup
 (with-eval-after-load 'emacs
