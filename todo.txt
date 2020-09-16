@@ -1,0 +1,22 @@
+https://emacs.stackexchange.com/questions/60611/cannot-figure-out-why-vc-git-elc-is-always-loaded-on-startup
+
+https://www.masteringemacs.org/article/whats-new-in-emacs-27-1
+https://github.com/rougier/emacs-defaults/blob/master/defaults.el
+
+https://blog.d46.us/advanced-emacs-startup/
+https://www.reddit.com/r/emacs/comments/3kqt6e/2_easy_little_known_steps_to_speed_up_emacs_start/
+
+
+ - navigation (jumps, etc)
+ - vue, html, js
+
+
+👍
+
+👨🏼‍🦳
+
+👨🏽‍🦱
+
+👨🏼
+
+🏴‍☠️
