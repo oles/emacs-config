@@ -15,12 +15,12 @@
 
 
 ;; don't create backup files
-(setq-default backup-inhibited t)
-(setq-default make-backup-files nil)
-(setq-default auto-save-default nil)
-(setq-default auto-save-list-file-prefix nil)
-(setq-default auto-save-list-file-name nil)
-(setq-default backup-directory-alist nil)
+(setq auto-save-default nil)
+(setq make-backup-files nil)
+
+
+;; don't creat lockfiles
+(setq create-lockfiles nil)
 
 
 ;; set 4 spaces as tab
