@@ -1,6 +1,7 @@
 ;; customizations for built-in packages
 (relative-load "cc-mode.el")
 (relative-load "conf-mode.el")
+(relative-load "css-mode.el")
 (relative-load "custom-mode.el")
 (relative-load "diff-mode.el")
 (relative-load "electric-pair-mode/init.el")
