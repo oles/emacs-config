@@ -67,8 +67,8 @@
 
 
 ;; kill processes without confirmation
-(setq confirm-kill-processes nil)
-(setq kill-buffer-query-functions nil)
+;; (setq confirm-kill-processes nil)
+;; (setq kill-buffer-query-functions nil)
 
 
 ;; removes warnings for the commands listed

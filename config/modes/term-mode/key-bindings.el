@@ -30,17 +30,41 @@
 
 
 
+(define-key term-raw-map (kbd "M-:") 'eval-expression)
 
-(define-key term-raw-map (kbd "C-o") 'find-file)
-(define-key term-raw-map (kbd "C-u") 'new-terminal)
-(define-key term-raw-map (kbd "C-t") 'new-buffer)
-(define-key term-raw-map (kbd "C-w") 'kill-this-buffer)
+
+(define-key term-raw-map (kbd "C-o")
+  (lambda()
+    (interactive)
+    (unless tabbar-local-mode (call-interactively 'find-file))))
+
+(define-key term-raw-map (kbd "C-u")
+  (lambda()
+    (interactive)
+    (unless tabbar-local-mode (new-terminal))))
+
+(define-key term-raw-map (kbd "C-t")
+  (lambda()
+    (interactive)
+    (unless tabbar-local-mode (new-buffer))))
+
+(define-key term-raw-map (kbd "C-w") (kill-current-buffer))
+
+;; (define-key term-raw-map (kbd "C-w")
+;;   (lambda()
+;;     (interactive)
+;;     (unless tabbar-local-mode
+;;       ;(message "test 2")
+;;       (get-terminal-processes)
+;;       )))
+
+
+
+
 (define-key term-raw-map (kbd "C-v")
   (lambda()
     (interactive)
     (term-send-raw-string (gui-get-selection `CLIPBOARD `UTF8_STRING))))
-
-
 
 (define-key term-mode-map (kbd "C-c") 'clipboard-copy)
 (define-key term-mode-map [escape]
