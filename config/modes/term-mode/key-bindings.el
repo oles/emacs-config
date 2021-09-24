@@ -54,11 +54,10 @@
 ;;   (lambda()
 ;;     (interactive)
 ;;     (unless tabbar-local-mode
-;;       ;(message "test 2")
-;;       (get-terminal-processes)
+;;       (if (< 1 (length (get-terminal-processes)))
+;;           (message "ask")
+;;         (message "kill"))
 ;;       )))
-
-
 
 
 (define-key term-raw-map (kbd "C-v")
