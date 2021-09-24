@@ -1,3 +1,10 @@
+;; https://emacs.stackexchange.com/questions/48306/how-to-automatically-kill-a-shell-buffer-when-the-shell-process-exits
+;; https://emacs.stackexchange.com/questions/64825/how-to-make-term-close-the-buffer-when-the-process-exits
+;; https://stackoverflow.com/questions/14444265/kill-the-terminal-buffer-with-c-d
+;; https://stackoverflow.com/questions/12624815/how-to-automatically-kill-buffer-on-terminal-process-exit-in-emacs
+;; https://stackoverflow.com/questions/64502021/how-do-you-terminate-a-process-inside-a-shell-in-emacs
+;; https://emacs.stackexchange.com/questions/59497/how-to-override-q-in-term-mode-with-passthrough-if-the-shell-process-is-still-li
+
 ;; (defun set-no-process-query-on-exit ()
 ;;   (let ((proc (get-buffer-process (current-buffer))))
 ;;     (when (processp proc)
