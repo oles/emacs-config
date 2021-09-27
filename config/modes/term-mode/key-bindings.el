@@ -29,9 +29,7 @@
   (define-key term-raw-map (kbd key) nil))
 
 
-
 (define-key term-raw-map (kbd "M-:") 'eval-expression)
-
 
 (define-key term-raw-map (kbd "C-o")
   (lambda()
@@ -48,17 +46,14 @@
     (interactive)
     (unless tabbar-local-mode (new-buffer))))
 
-(define-key term-raw-map (kbd "C-w") (kill-current-buffer))
-
-;; (define-key term-raw-map (kbd "C-w")
-;;   (lambda()
-;;     (interactive)
-;;     (unless tabbar-local-mode
-;;       (if (< 1 (length (get-terminal-processes)))
-;;           (message "ask")
-;;         (message "kill"))
-;;       )))
-
+(define-key term-raw-map (kbd "C-w")
+  (lambda()
+    (interactive)
+    (unless tabbar-local-mode
+      (if (< 1 (length (get-terminal-processes)))
+          (kill-current-buffer)
+        (kill-current-term-mode-buffer-without-process-query))
+      )))
 
 (define-key term-raw-map (kbd "C-v")
   (lambda()
