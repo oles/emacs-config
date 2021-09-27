@@ -1,3 +1,7 @@
+(setq web-mode-enable-css-colorization nil)
+(setq web-mode-enable-html-entities-fontification t)
+
+
 (set-face-attribute 'web-mode-html-tag-face nil
                     :foreground 'unspecified
                     :inherit 'font-lock-variable-name-face)
