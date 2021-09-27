@@ -82,6 +82,7 @@
     (setq deactivate-mark nil) ; restore the selected region
     ))
 
+;; TODO: create an indent function that adds indentation to current selection
 
 (defun reload-file()
   (interactive)
