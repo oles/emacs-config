@@ -9,3 +9,5 @@
 (defalias 'reset-font-size 'text-scale-reset)
 
 (defalias 'uppercase 'upcase-region)
+
+(defalias 'go-to-end-of-block 'forward-list)
