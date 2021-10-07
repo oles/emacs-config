@@ -131,3 +131,33 @@
   (rename-buffer "*term*")
   (tabbar-local-mode)
   (set-window-dedicated-p (selected-window) t))
+
+
+
+;; TODO: add capitalize function, same as sentence-case
+;; (defun capitalize (&optional string)
+;;   (when (and string (> (length string) 0))
+;;     (let ((first-char (substring string nil 1))
+;;           (rest-str   (substring string 1)))
+;;       (concat (capitalize first-char) rest-str))))
+
+
+(defun string-to-sentence-case(string)
+  (capitalize-word 1 (replace-regexp-in-string "-" " " string))
+  )
+
+
+(defun replace-in-current-region(string)
+  (delete-region (region-beginning) (region-end))
+  (insert string))
+
+
+(defun get-current-region()
+  (buffer-substring (region-beginning) (region-end)))
+
+
+(defun sentence-case(&optional string)
+  (interactive)
+  (if (region-active-p)
+      (replace-in-current-region (string-to-sentence-case (get-current-region)))
+    (string-to-sentence-case string)))
