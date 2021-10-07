@@ -141,6 +141,11 @@
 ;;           (rest-str   (substring string 1)))
 ;;       (concat (capitalize first-char) rest-str))))
 
+;; (defun capitalizeFirst (s)
+;;   (if (> (length s) 0)
+;;       (concat (upcase (substring s 0 1)) (downcase (substring s 1)))
+;;     nil))
+
 
 (defun string-to-sentence-case(string)
   (capitalize-word 1 (replace-regexp-in-string "-" " " string))
