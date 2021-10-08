@@ -96,6 +96,10 @@
 (setq-default css-fontify-colors nil)
 
 
+;; keeps the highlight active in inactive windows
+(setq highlight-nonselected-windows t)
+
+
 ;; stops keyboard-escape-quit from closing other windows
 (defadvice keyboard-escape-quit
   (around keyboard-escape-quit-dont-close-windows activate)
